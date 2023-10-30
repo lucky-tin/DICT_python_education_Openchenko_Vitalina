@@ -129,5 +129,26 @@ The rabbit habitat...
 (" ~----( ~   Y.    ) 
 It looks fine! """
 
+# Zoo 4-th stage
 
+print("Please enter the number of the habitat you would like to view\n(camel = 1, lion = 2, deer = 3, goose = 4, bat = 5,  rabbit = 6):")
+while True:
+    name = input("вибиріть номер або напишить exit: ")
+    if name == '1':
+        print(camel)
+    elif name == '2':
+        print(lion)
+    elif name == '3':
+        print(deer)
+    elif name == '4':
+        print(goose)
+    elif name == '5':
+        print(bat)
+    elif name == '6':
+        print(rabbit)
+    elif name == 'exit':
+        print("See you later")
+        break
+    else:
+        print("error, спробуйте ще раз")
 
