@@ -1,0 +1,3 @@
+#hangman
+
+print('HANGMAN')
