@@ -15,4 +15,10 @@ def play_hangman():
         print('Hangman')
         choice = input('Type "play" to play the game, "exit" to quit: > ')
 
-print('HANGMAN')
+        if chice =="play":
+            secret_word = choose_word()
+            guessed_word = ["_"] * len(secret_word)
+            attempts = 8 #number of attempts
+            guessed_letters = [] #list of letters already guessed
+
+            print('Welcome to the game!')
