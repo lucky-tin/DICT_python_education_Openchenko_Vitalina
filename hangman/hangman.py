@@ -1,14 +1,13 @@
-#hangman
+# hangman - game with words
 import random
 
-#hangman word list
-
-word_list= ["python", "java", "javascript", "php"]
+# hangman word list
+word_list=["python", "java", "javascript", "php"]
 
 def choose_word():
     return random.choice(word_list)
 
-#game code
+# game code
 
 def play_hangman():
     while True:
@@ -41,8 +40,6 @@ def play_hangman():
                     if "_" not in guessed_word:
                         print(f"Congratulations! You guessed the word: {secret_word}")
                         break
-                    else:
-                        print("No improvements")
                 else:
                     attempts -= 1
                     guessed_letters.append(guess)
@@ -55,5 +52,6 @@ def play_hangman():
         else:
             print('Invalid choice. Please enter "play" or "exit".')
 
-        if __name__ == "__main__":
-            play_hangman()
+
+if __name__ == "__main__":
+    play_hangman()
