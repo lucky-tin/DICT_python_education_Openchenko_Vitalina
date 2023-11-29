@@ -1,3 +1,5 @@
+# dinnerparty: Writing a program for dividing joint costs
+
 import random
 
 num_of_friends = int(input("Enter the number of friends joining (including you):\n"))
