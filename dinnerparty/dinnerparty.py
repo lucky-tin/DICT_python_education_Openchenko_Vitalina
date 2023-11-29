@@ -32,3 +32,9 @@ else:
                 friends[friend] = round(friends[friend] + amount_per_friend, 2)
 
         friends[lucky_friend] = 0
+
+        print(f"{lucky_friend} is the lucky one!")
+    else:
+        print("No one is going to be lucky")
+
+    print(friends)
