@@ -157,28 +157,28 @@ while True:
         result += editor.add_plain_text()
 
     elif user_formatter == "bold":
-        result += editor.add_bold_text()
+        result += add_bold_text()
 
     elif user_formatter == "italic":
-        result += editor.add_italic_text()
+        result += add_italic_text()
 
     elif user_formatter == "inline-code":
-        result += editor.add_inline_code()
+        result += add_inline_code()
 
     elif user_formatter == "link":
-        result += editor.add_link()
+        result += add_link()
 
     elif user_formatter == "header":
-        result += editor.add_header()
+        result += add_header()
 
     elif user_formatter == "unordered-list":
-        result += editor.add_list(is_ordered=False)
+        result += add_list(is_ordered=False)
 
     elif user_formatter == "ordered-list":
-        result += editor.add_list(is_ordered=True)
+        result += add_list(is_ordered=True)
 
     elif user_formatter == "new-line":
-        result += editor.add_new_line()
+        result += add_new_line()
 
     elif user_formatter == "!help":
         print("Available formatters: ", *available_formatters)
